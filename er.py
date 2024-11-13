@@ -34,8 +34,8 @@ print(rm_grouped)
 # 繪製不同RM值的平均房價直方圖
 rm_grouped.plot(kind='bar', edgecolor='black')
 plt.title('Distribution of Boston Housing Price Group by RM')
-plt.xlabel('MEDV')
-plt.ylabel('RM')
+plt.xlabel('RM')
+plt.ylabel('MEDV')
 plt.show()
 
 # 準備線性回歸的數據
