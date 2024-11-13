@@ -21,9 +21,9 @@ print("中位數房價:", df['MEDV'].median())
 
 # 繪製房價分布直方圖，以10為區間
 plt.hist(df['MEDV'], bins=range(0, int(df['MEDV'].max()) + 10, 10), edgecolor='black')
-plt.title('房價分布')
-plt.xlabel('房價')
-plt.ylabel('頻率')
+plt.title('Distribution of House Price')
+plt.xlabel('House Price Range (thousand dollars)')
+plt.ylabel('Count')
 plt.show()
 
 # 將RM值四捨五入到個位數，並分析不同RM值的平均房價
@@ -33,9 +33,9 @@ print(rm_grouped)
 
 # 繪製不同RM值的平均房價直方圖
 rm_grouped.plot(kind='bar', edgecolor='black')
-plt.title('不同RM值的平均房價')
-plt.xlabel('RM (四捨五入)')
-plt.ylabel('平均房價')
+plt.title('Distribution of Boston Housing Price Group by RM')
+plt.xlabel('MEDV')
+plt.ylabel('RM')
 plt.show()
 
 # 準備線性回歸的數據
