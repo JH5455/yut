@@ -6,9 +6,9 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 import matplotlib.pyplot as plt
 
-# 使用本地路徑讀取資料集
-train_file_path = r'C:\Users\user\Desktop\yut\week10\train.csv'
-test_file_path = r'C:\Users\user\Desktop\yut\week10\test.csv'
+# 使用相對路徑讀取資料集
+train_file_path = os.path.join('week10', 'train.csv')
+test_file_path = os.path.join('week10', 'test.csv')
 
 # 檢查文件是否存在
 if not os.path.exists(train_file_path):
