@@ -9,6 +9,8 @@ df = pd.read_csv('BOSTON_HOUSE_PRICES.CSV', header=1)
 
 # 顯示前幾行資料
 print(df.head())
+# 確認資料是否完全讀入
+print("資料總行數:", len(df))
 
 # 檢查是否有缺失值
 print(df.isnull().sum())
